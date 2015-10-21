@@ -1,0 +1,19 @@
+{
+    "name": "resultsystems/laravel-cors",
+    "description": "Laravel cors",
+    "license": "MIT",
+    "authors": [{
+        "name": "Leandro Henrique Reis",
+        "email": "resultsystems@gmail.com"
+    }],
+
+    "require": {
+        "php": ">=5.5.9"
+    },
+     "autoload": {
+        "psr-4": {
+            "ResultSystems\\Cors\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
