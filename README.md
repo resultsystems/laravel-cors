@@ -57,3 +57,6 @@ php artisan vendor:publish
 configure o arquivo com os domínios que dejeja liberar
 
 `config/cors.php`
+
+Inspirado no artigo: http://en.vedovelli.com.br/2015/web-development/Laravel-5-1-enable-CORS/
+Obrigado @vedovelli
