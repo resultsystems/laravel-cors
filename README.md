@@ -2,6 +2,8 @@
 
 ## Instalação
 
+[Vídeo Tutorial](https://youtu.be/6vBSI4Dz63c)
+
 ### 1. Dependência
 
 Usando o <a href="https://getcomposer.org/" target="_blank">composer</a>, execute o comando a seguir para instalar automaticamente `composer.json`:
