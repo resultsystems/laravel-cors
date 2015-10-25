@@ -39,6 +39,10 @@ class CorsMiddleware implements Middleware
             if (in_array($url['host'], $permissions)) {
                 return $url['scheme'].'://'.$url['host'];
             }
+
+            if (in_array($url['host'].':'.$url['port'], $permissions)) {
+                return $url['scheme'].'://'.$url['host'].':'.$url['port'];
+            }
         }
 
         return '';
