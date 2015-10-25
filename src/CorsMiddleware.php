@@ -29,7 +29,7 @@ class CorsMiddleware implements Middleware
         $allow = '';
         $permissions = Config::get('cors.permissions', ['*']);
 
-        if ($permissions == '*' || ['*']) {
+        if ($permissions == '*' || $permissions == ['*']) {
             return '*';
         }
 

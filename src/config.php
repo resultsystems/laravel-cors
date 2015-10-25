@@ -8,5 +8,5 @@ return [
 'www.dominio1.com.br',
 ],
  */
-    'permissions' => ['*'], // Libera todos
+    'permissions' => '*', // Libera todos domínios
 ];
