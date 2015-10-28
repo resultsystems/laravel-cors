@@ -62,3 +62,35 @@ configure o arquivo com os domínios que dejeja liberar
 
 Inspirado no artigo: http://en.vedovelli.com.br/2015/web-development/Laravel-5-1-enable-CORS/
 Obrigado @vedovelli
+
+#### 5 Bônus
+
+Caso você utilize `nginx`
+
+Adicione estas configurações no arquivo de configurações do site:
+```
+	location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		try_files $uri $uri/ /$is_args$args;
+	     if ($request_method = 'OPTIONS') {
+	        add_header 'Access-Control-Allow-Origin' '*';
+	        #
+	        # Om nom nom cookies
+	        #
+	        add_header 'Access-Control-Allow-Credentials' 'true';
+	        add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+	        #
+	        # Custom headers and headers various browsers *should* be OK with but aren't
+	        #
+	        add_header 'Access-Control-Allow-Headers' 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type';
+	        #
+	        # Tell client that this pre-flight info is valid for 20 days
+	        #
+	        add_header 'Access-Control-Max-Age' 1728000;
+	        add_header 'Content-Type' 'text/plain charset=UTF-8';
+	        add_header 'Content-Length' 0;
+	        return 204;
+	     }
+	}
+```
