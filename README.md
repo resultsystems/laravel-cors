@@ -94,3 +94,12 @@ Adicione estas configurações no arquivo de configurações do site:
 	     }
 	}
 ```
+
+Caso seja apache, talvez seja necessário adicionar estas linhas abaixo ao .htaccess
+```
+    <IfModule mod_rewrite.c>
+        <IfModule mod_negotiation.c>
+            Options -MultiViews
+        </IfModule>
+    </IfModule>
+```
