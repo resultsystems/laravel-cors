@@ -4,9 +4,8 @@ namespace ResultSystems\Cors;
 
 use Closure;
 use Config;
-use Illuminate\Contracts\Routing\Middleware;
 
-class CorsMiddleware implements Middleware
+class CorsMiddleware
 {
     /**
      * Handle an incoming request.
