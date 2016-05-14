@@ -50,7 +50,7 @@ Selecionar os domínios permitidos no Laraver-Cors em sua aplicação Laravel, �
 Para publicar o arquivo de configuração padrão que acompanham o package, execute o seguinte comando:
 
 ```shell
-php artisan vendor:publish
+php artisan vendor:publish  --provider="ResultSystems\Cors\CorsServiceProvider"
 ```
 
 
