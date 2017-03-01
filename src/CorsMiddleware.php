@@ -25,7 +25,6 @@ class CorsMiddleware
 
     public function getPermission()
     {
-        $allow = '';
         $permissions = Config::get('cors.permissions', ['*']);
 
         if ($permissions == '*' || $permissions == ['*']) {
@@ -44,6 +43,6 @@ class CorsMiddleware
             }
         }
 
-        return '';
+        return '*';
     }
 }
