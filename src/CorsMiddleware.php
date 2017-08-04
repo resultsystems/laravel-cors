@@ -19,7 +19,7 @@ class CorsMiddleware
         $allow = $this->getPermission();
 
         return $next($request)->header('Access-Control-Allow-Origin', $allow)
-            ->header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE')
+            ->header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE, PATCH')
             ->header('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization, X-Requested-With, Origin');
     }
 
