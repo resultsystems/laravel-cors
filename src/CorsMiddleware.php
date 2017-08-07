@@ -34,16 +34,20 @@ class CorsMiddleware
             return '*';
         }
 
-        if (isset($_SERVER['HTTP_REFERER'])) {
-            $url = parse_url($_SERVER['HTTP_REFERER']);
+        if (!isset($_SERVER['HTTP_REFERER'])) {
+          return '*';
+        }
+        $url = parse_url($_SERVER['HTTP_REFERER']);
 
-            if (in_array($url['host'], $permissions)) {
-                return $url['scheme'].'://'.$url['host'];
-            }
+        if (!is_array($permissions)) {
+            $permissions = [$permissions];
+        }
 
-            if (in_array($url['host'].':'.$url['port'], $permissions)) {
-                return $url['scheme'].'://'.$url['host'].':'.$url['port'];
-            }
+        if (in_array($url['host'], $permissions)) {
+            return $url['scheme'].'://'.$url['host'];
+        }
+        if (in_array($url['host'].':'.$url['port'], $permissions)) {
+            return $url['scheme'].'://'.$url['host'].':'.$url['port'];
         }
 
         return '*';
