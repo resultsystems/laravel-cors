@@ -50,6 +50,6 @@ class CorsMiddleware
             return $url['scheme'].'://'.$url['host'].':'.$url['port'];
         }
 
-        return '*';
+        return $url['scheme'].'://'.current($permissions);
     }
 }
