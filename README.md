@@ -1,4 +1,4 @@
-#Laravel Cors
+# Laravel Cors
 
 ## Instalação
 
@@ -17,7 +17,7 @@ ou manualmente no seu arquivo `composer.json`
 ```json
 {
     "require": {
-        "resultsystems/laravel-cors": "^1.0"
+        "resultsystems/laravel-cors": "^2.0"
     }
 }
 ```
