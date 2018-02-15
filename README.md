@@ -12,16 +12,6 @@ Usando o <a href="https://getcomposer.org/" target="_blank">composer</a>, execut
 composer require resultsystems/laravel-cors
 ```
 
-ou manualmente no seu arquivo `composer.json`
-
-```json
-{
-    "require": {
-        "resultsystems/laravel-cors": "^2.0"
-    }
-}
-```
-
 ### 2. Middlewares
 Para utilizá-los é necessário registrá-los no seu arquivo app/Http/Kernel.php.
 
