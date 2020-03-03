@@ -1,5 +1,6 @@
 # Laravel Cors
 
+## Pacote abandonado pois o Laravel 7.X já tem suporte a cors nativo, use apenas se você tiver usando a versão 6.X ou abaixo.
 ## Instalação
 
 [Vídeo Tutorial](https://youtu.be/6vBSI4Dz63c)
