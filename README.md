@@ -1,7 +1,13 @@
 # Laravel Cors
 
+- This package is abandoned and no longer maintained. The author suggests using the [https://github.com/fruitcake/laravel-cors](https://github.com/fruitcake/laravel-cors) package instead.
+
+- Thanks for the more than 6,000 installations
+
 ## Pacote abandonado pois o Laravel 7.X já tem suporte a cors nativo, use apenas se você tiver usando a versão 6.X ou abaixo.
 ## Instalação
+
+
 
 [Vídeo Tutorial](https://youtu.be/6vBSI4Dz63c)
 
